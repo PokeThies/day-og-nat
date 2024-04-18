@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css" />
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>iver's visualizations</title>
+  </head>
+  <body class="container">
+    <div class="color-bg">
+    <header class="row">
+      <h1 class="text-center text-white col-lg-12 col-sm-12 col-12 col-md-12">
+        Iver's Visualizations
+      </h1>
+    </header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white fw-bold" href="index.html">FORSIDE</a>
+              </li>
+              <li class="nav-item">
+                <a  class="nav-link text-white  fw-bold" href="#produkter">PRODUKTER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white  fw-bold" href="Galleri.html">GALLERI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white  fw-bold" href="#Om-os">OM OS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white  fw-bold" href="#kontakts">KONTAKT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+
+<main class="d-flex justify-content-center">
+  <!-- #region Slideshow -->
+  <article class="row">
+    <section class="col-12">
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <figure class="mySlides fadeA">
+          <figcaption class="numbertext">1 / 2</figcaption>
+          <img src="imgs/Day - Night Bedroom, Day render.jpg" alt="An overlook of a city at night with dusky cloud" class="w-100" />
+        </figure>
+
+        <figure class="mySlides fadeA">
+          <figcaption class="numbertext">2 / 2</figcaption>
+          <img src="imgs/Day - night bedroom, Night render.jpg" alt="Evening look at city with street lights emanating the sky" class="w-100" />
+        </figure>
+      </div>
+      <br/>
+
+  <article class="row">
+  
+    
+    <!-- Images used to open the lightbox -->
+
+    <div class="gallery">
+        <article class="row ml">
+          <section class="col-lg-6 col-sm-6 col-12">
+            <figure class="image">
+              <img class="w-100  p-lg-3" src="imgs/Day - Night Bedroom, Day render.jpg" alt="Image 1"
+                onclick="openModal('imgs/Day - Night Bedroom, Day render.jpg', 'Day render')">
+            </figure>
+          </section>
+
+          <section class="col-lg-6 col-sm-6 col-12">
+            <figure class="image">
+              <img class="w-100 p-lg-3" src="imgs/Day - night bedroom, Night render.jpg" alt=Image 2"
+                onclick="openModal('imgs/Day - night bedroom, Night render.jpg', 'Night render')">
+            </figure>
+          </section>
+
+          <section class="col-lg-6 col-sm-6 col-12">
+             <figure class="image">
+            <img class="w-100 p-lg-3" src="imgs/Day - Night Bedroom, wireframe.jpg" alt="Image 2"
+              onclick="openModal('imgs/Day - Night Bedroom, wireframe.jpg', 'The Wireframe')">
+          </figure>
+          </section>
+
+             <section class="col-lg-6 col-sm-6 col-12">
+         <figure class="image">
+              <img class="w-100  p-lg-3" src="imgs/Test renders/Greybox render - Bedroom.jpg" alt=Image 2"
+                onclick="openModal('imgs/Test renders/Greybox render - Bedroom.jpg', 'Greybox mockup')">
+            </figure>
+        </section>
+
+          </article>
+       
+
+       
+
+        <!-- Add more images here -->
+
+      <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+  </div>
+</div>
+    
+   
+    
+  </article>
+    
+    </section>
+  </article>
+
+  
+  <!-- #endregion -->
+
+
+</main>
+
+
+
+
+        </div>
+    </main>
+
+    <footer class="bg-grey text-light py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="mb-0">&copy; 2024 Iver's Visualizations. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                <li class="list-inline-item"><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+  </body>
+  <script src="js.js"></script>
+</html>
